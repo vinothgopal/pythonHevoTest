@@ -3,7 +3,8 @@ from selenium import webdriver
 driver=None
 @pytest.fixture(scope="class")
 def setup(request):
-    driver = webdriver.Chrome(executable_path="C:\\temp\\chromedriver_win32 (9)\\chromedriver.exe")
+    rootpath = os.path.abspath(os.path.join(os.path.dirname(os.path.dirname(_file_))))
+    driver = webdriver.Chrome(executable_path=rootpath+"drivers\\chromedriver.exe")
     driver.maximize_window()
     driver.get("https://in.hevodata.com/login")
     driver.implicitly_wait(20)
