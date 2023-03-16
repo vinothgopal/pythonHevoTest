@@ -1,0 +1,13 @@
+{
+  "Table_name": "autohevo",
+  "name": [
+    "Demo1",
+    "Demo2",
+    "Demo3"
+  ],
+  "age": [
+    23,
+    45,
+    33
+  ]
+}
